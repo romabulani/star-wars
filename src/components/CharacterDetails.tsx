@@ -21,7 +21,7 @@ const CharacterDetails: React.FC<CharacterProps> = () => {
   return (
     <div className="p-6 mx-auto w-full">
       <div className="flex flex-col sm:flex-row justify-between">
-        <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-3 mb-2 sm:mb-3 md:gap-4 md:mb-4">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 mb-2 sm:mb-3 md:gap-4 md:mb-4">
           <Avatar name={character.name} />
           <div className="flex items-center sm:items-start flex-col gap-y-[2px]">
             <h2 className="text-xl font-bold">{character.name}</h2>
