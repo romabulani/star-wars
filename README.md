@@ -1,46 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="/public/starwarslogo.png" height="100" width="100" alt="logo"/>
+  <h1>Star Wars Zone</h1>
+  <a href="https://star-wars-zone.netlify.app/">Live Website</a>
+</div>
 
-## Available Scripts
+## About
+**Star Wars Zone** is a web application which displays character details from the Star Wars universe using the SWAPI API. Users can view a list of characters, navigate to detailed views, and manage a favorites list. The application is built with TypeScript and React, utilizing Tailwind CSS for styling and following best practices for maintainability and scalability.
 
-In the project directory, you can run:
+## How to run the app locally?
+```
+$ git clone https://github.com/romabulani/star-wars.git
+$ cd star-wars
+$ nvm use
+$ npm install
+$ npm start
+```
 
-### `npm start`
+## Screens in this project
+- Character List View
+- Character Details View
+- Favorite Characters View
+- 404 (Not Found) Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+### Character List View
+ - Lists all characters from the Star Wars universe, displaying their name, gender, and home planet.
+ - Pagination controls to navigate through results.
+ - Persistent search functionality to query characters by name, maintaining the search query across page reloads.
+ - Clicking a character navigates to the character details page.
+  
+### Character Details View
+  - Displays character details: name, hair color, eye color, gender, and home planet.
+  - Lists films the character has appeared in.
+  - Lists starships the character has piloted.
+  - Ability to add characters to the favorites list.
+  
+### Favorites View
+  - Displays all characters added to the favorites list with their name, height, gender, and home planet.
+  - Ability to remove characters from the favorites list.
+  - Optional: Ability to amend a character's height or gender.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Performance Enhancements
+ - Lazy Loading: Implements lazy loading for character details and favorites page, optimizing initial load times.
+ - Caching: Manages API calls with caching to reduce network requests and improve response times.
 
-### `npm test`
+### Best Practices
+ - Test-Driven Development (TDD): A TDD approach was followed for the majority of the components, ensuring that tests are written before the implementation. This practice helps maintain high code quality and reliability. Efforts were made to achieve code coverage above 80%, contributing to the robustness of the application.
+ - Clean Folder Structure: The project features a clean and organized folder structure, promoting better maintainability. Components are broken down into smaller, reusable units, which enhances their reusability across different parts of the application. This modular design makes it easier for multiple developers to collaborate and contribute without causing conflicts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack and Tools
+- React JS
+- React Router v6
+- Tailwind CSS 
+- Git For Version Control
+- Netlify for Deployment
+- React Testing Library and JEST for Testing
+- SWAPI (Star Wars API)
 
-### `npm run build`
+### Future Considerations
+When considering this project as a foundation for a larger application, the following enhancements could significantly improve user engagement and functionality:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - State Management: Evaluate if Redux, zustand or a similar state management solution is needed as the application grows.
+ - API Handling: Consider adding error handling and loading states for API calls to enhance user experience.
+ - Accessibility: Ensure that the application is accessible to all users, adhering to ARIA standards.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Suggested Enhancements
+ - Similar Character Recommendations: Implement a feature that suggests similar characters based on attributes like species, home planet, or appearances in films. This could enhance user engagement by introducing them to lesser-known characters.
+ - Share Favorite Characters with Others: Enable users to share their favorite characters through social media or direct links. This feature could allow users to connect with others and discuss their favorite characters.
+ - Character Avatars: Integrate avatars for each character to provide a more visually appealing experience. This could include images sourced from the SWAPI or other databases, enhancing the character details view.
+ - Leaderboard for Favorites: Create a leaderboard feature that showcases the most popular favorite characters across the user base. This could encourage user interaction and foster a sense of community.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Live Link
+[Star Wars Zone](https://star-wars-zone.netlify.app/)
