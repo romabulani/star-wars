@@ -51,6 +51,7 @@ $ npm start
 
 ## Tech Stack and Tools
 - React JS
+- Typescript
 - React Router v6
 - Tailwind CSS 
 - Git For Version Control
